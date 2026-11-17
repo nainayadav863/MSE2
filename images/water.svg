@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="waterBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e1f5fe"/>
+      <stop offset="100%" stop-color="#b3e5fc"/>
+    </linearGradient>
+    <linearGradient id="dropGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0288d1"/>
+      <stop offset="100%" stop-color="#01579b"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#waterBg)"/>
+  <circle cx="300" cy="200" r="140" fill="#ffffff" opacity="0.6"/>
+  <path d="M300 80 C260 150, 200 210, 200 260 C200 315, 245 350, 300 350 C355 350, 400 315, 400 260 C400 210, 340 150, 300 80 Z" fill="url(#dropGrad)"/>
+  <ellipse cx="260" cy="240" rx="30" ry="18" fill="#ffffff" opacity="0.35" transform="rotate(-30 260 240)"/>
+  <path d="M120 370 Q300 330 480 370" stroke="#0288d1" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M160 385 Q300 355 440 385" stroke="#29b6f6" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <text x="300" y="55" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#01579b" text-anchor="middle">Clean Drinking Water Initiative</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <rect width="600" height="450" fill="#e8f5e9"/>
+  <rect x="20" y="20" width="560" height="410" rx="8" fill="#ffffff" stroke="#c8e6c9" stroke-width="2"/>
+  <circle cx="300" cy="190" r="100" fill="#dcedc8"/>
+  <rect x="240" y="140" width="120" height="120" rx="12" fill="#ffffff" stroke="#2e7d32" stroke-width="4"/>
+  <rect x="285" y="160" width="30" height="80" fill="#d32f2f" rx="3"/>
+  <rect x="260" y="185" width="80" height="30" fill="#d32f2f" rx="3"/>
+  <text x="300" y="380" font-family="Arial, sans-serif" font-size="19" font-weight="bold" fill="#1b5e20" text-anchor="middle">Free Health Checkup Camp</text>
+  <text x="300" y="405" font-family="Arial, sans-serif" font-size="14" fill="#2e7d32" text-anchor="middle">Rural Health Outreach - December 2025</text>
+</svg>

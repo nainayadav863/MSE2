@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate - Hope Life Foundation</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo-area">
+        <img src="images/logo.svg" alt="Logo">
+        <div class="logo-text">
+          <h1>Hope Life Foundation</h1>
+          <p>Serving Communities</p>
+        </div>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="causes.html">Causes</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="donate.html" class="nav-donate-btn active">Donate Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header" style="background: #f57c00;">
+    <div class="container">
+      <h2>Make a Donation</h2>
+      <p>Direct assistance deployed to water, food, and education programs.</p>
+    </div>
+  </section>
+
+  <section class="section-padding" style="background: #fff; border-bottom: 1px solid #e0e0e0; padding: 25px 0;">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto; background: #f9fbf9; border: 1px solid #c8e6c9; border-radius: 6px; padding: 18px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; flex-wrap: wrap;">
+          <h3 style="font-size: 16px; color: #1b5e20;">2026 Annual Relief Goal</h3>
+          <span style="font-size: 13px; font-weight: bold; color: #2e7d32;">Goal: $100,000</span>
+        </div>
+        <div class="progress-box">
+          <div class="progress-info">
+            <span>Total Raised: $85,200</span>
+            <span>85.2% Complete</span>
+          </div>
+          <div class="progress-track" style="height: 15px;">
+            <div class="progress-fill" data-percentage="85"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding">
+    <div class="container">
+      <div class="donate-layout">
+
+        <div class="form-box">
+          <h3 style="font-size: 18px; color: #1b5e20; margin-bottom: 6px;">Donation Details</h3>
+          <p style="font-size: 13px; color: #666; margin-bottom: 20px;">Choose a quick amount or enter a custom amount.</p>
+
+          <form id="donationForm" novalidate>
+            <div class="form-step">
+              <h4>1. Frequency</h4>
+              <div class="radio-group">
+                <label class="radio-option">
+                  <input type="radio" name="frequency" value="one-time" checked> One-Time
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="frequency" value="monthly"> Monthly
+                </label>
+              </div>
+            </div>
+
+            <div class="form-step">
+              <h4>2. Amount (USD)</h4>
+              <div class="quick-amounts">
+                <button type="button" class="quick-btn" data-amount="10">$10</button>
+                <button type="button" class="quick-btn" data-amount="25">$25</button>
+                <button type="button" class="quick-btn active" data-amount="50">$50</button>
+                <button type="button" class="quick-btn" data-amount="100">$100</button>
+                <button type="button" class="quick-btn" data-amount="250">$250</button>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 4px;">
+                <label for="customAmount">Custom Amount ($)</label>
+                <input type="number" id="customAmount" value="50" min="1" step="any" required>
+                <div id="amountError" class="field-error">Please enter a valid amount.</div>
+              </div>
+            </div>
+
+            <div class="form-step">
+              <h4>3. Select Cause</h4>
+              <div class="form-group">
+                <label for="causeSelect">Program</label>
+                <select id="causeSelect">
+                  <option value="general">General Fund (Most Needed)</option>
+                  <option value="water">Clean Drinking Water</option>
+                  <option value="education">School Kits & Child Education</option>
+                  <option value="food">Daily Food Distribution</option>
+                  <option value="health">Rural Health Camps</option>
+                  <option value="shelter">Winter Blanket Relief</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-step">
+              <h4>4. Donor Information</h4>
+              <div class="form-group">
+                <label for="donorName">Full Name *</label>
+                <input type="text" id="donorName" placeholder="Your name" required>
+                <div id="donorNameError" class="field-error">Please enter your full name.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="donorEmail">Email Address (for tax receipt) *</label>
+                <input type="email" id="donorEmail" placeholder="name@example.com" required>
+                <div id="donorEmailError" class="field-error">Please enter a valid email.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="donorPhone">Phone Number</label>
+                <input type="tel" id="donorPhone" placeholder="Optional phone number">
+              </div>
+            </div>
+
+            <div class="form-step">
+              <h4>5. Payment Method</h4>
+              <div class="radio-group">
+                <label class="radio-option">
+                  <input type="radio" name="paymentMethod" value="card" checked> Credit / Debit Card
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="paymentMethod" value="upi"> UPI / Net Banking
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="paymentMethod" value="paypal"> PayPal
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" id="donateSubmitBtn" class="btn btn-primary btn-block" style="padding: 12px; font-size: 15px;">
+              Complete Donation of $50
+            </button>
+
+            <div id="receiptBox" class="receipt-box"></div>
+          </form>
+        </div>
+
+        <div>
+          <div class="sidebar-info" style="margin-bottom: 20px;">
+            <h4>Tax Deduction</h4>
+            <p>Donations are eligible for tax exemption under Section 80G / 501(c)(3).</p>
+            <ul class="sidebar-list">
+              <li><strong>Receipt:</strong> Delivered via email immediately.</li>
+              <li><strong>Transparency:</strong> Audited statements posted annually.</li>
+            </ul>
+          </div>
+
+          <div class="sidebar-info">
+            <h4>Bank Transfer</h4>
+            <ul class="sidebar-list">
+              <li><strong>Account:</strong> Hope Life Foundation</li>
+              <li><strong>Bank:</strong> State Bank of India</li>
+              <li><strong>Account No:</strong> 3982001928374</li>
+              <li><strong>IFSC:</strong> SBIN0001234</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Hope Life Foundation</h4>
+          <p>Independent charitable trust founded in 2018 providing education, water, and food relief.</p>
+          <p>Registration No: NGO-2018-09412</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="causes.html">Our Causes</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="donate.html">Donate</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p><strong>Address:</strong> 124 Hope Street, New Delhi 110001</p>
+          <p><strong>Phone:</strong> +91 98765 43210</p>
+          <p><strong>Email:</strong> contact@hopelifengo.org</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hope Life Foundation. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volunteer - Hope Life Foundation</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo-area">
+        <img src="images/logo.svg" alt="Logo">
+        <div class="logo-text">
+          <h1>Hope Life Foundation</h1>
+          <p>Serving Communities</p>
+        </div>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="causes.html">Causes</a></li>
+          <li><a href="volunteer.html" class="active">Volunteer</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="donate.html" class="nav-donate-btn">Donate Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h2>Join Us as a Volunteer</h2>
+      <p>Give your time to support families, teach students, and deliver relief.</p>
+    </div>
+  </section>
+
+  <section class="section-padding">
+    <div class="container">
+
+      <div class="grid-3" style="margin-bottom: 30px;">
+        <div class="card" style="padding: 18px; border-top: 3px solid #2e7d32;">
+          <h4 style="color: #1b5e20; font-size: 15px; margin-bottom: 6px;">Ground Impact</h4>
+          <p style="font-size: 12px; color: #555;">Participate directly in clean water setups and meal packing.</p>
+        </div>
+        <div class="card" style="padding: 18px; border-top: 3px solid #f57c00;">
+          <h4 style="color: #e65100; font-size: 15px; margin-bottom: 6px;">Flexible Timing</h4>
+          <p style="font-size: 12px; color: #555;">Most programs happen on weekend mornings for 3 to 4 hours.</p>
+        </div>
+        <div class="card" style="padding: 18px; border-top: 3px solid #0288d1;">
+          <h4 style="color: #0277bd; font-size: 15px; margin-bottom: 6px;">Certificate of Service</h4>
+          <p style="font-size: 12px; color: #555;">Official volunteer certificates awarded upon 30 hours of work.</p>
+        </div>
+      </div>
+
+      <div class="donate-layout">
+        <div class="form-box">
+          <h3 style="font-size: 18px; color: #1b5e20; margin-bottom: 6px;">Registration Form</h3>
+          <p style="font-size: 13px; color: #666; margin-bottom: 18px;">Fill in your details to sign up as a volunteer.
+          </p>
+
+          <form id="volunteerForm" novalidate>
+            <div class="form-group">
+              <label for="volName">Full Name *</label>
+              <input type="text" id="volName" placeholder="Your name" required>
+              <div id="volNameError" class="field-error">Please enter at least 3 characters.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="volEmail">Email Address *</label>
+              <input type="email" id="volEmail" placeholder="name@example.com" required>
+              <div id="volEmailError" class="field-error">Please enter a valid email address.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="volPhone">Phone Number *</label>
+              <input type="tel" id="volPhone" placeholder="10-digit number" required>
+              <div id="volPhoneError" class="field-error">Please enter a valid 10-digit phone number.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="volCity">City / Area *</label>
+              <input type="text" id="volCity" placeholder="Your location" required>
+              <div id="volCityError" class="field-error">Please enter your city or area.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="volRole">Area of Interest *</label>
+              <select id="volRole" required>
+                <option value="">-- Choose Role --</option>
+                <option value="teaching">Weekend Child Tutoring</option>
+                <option value="food">Community Food Packaging</option>
+                <option value="medical">Rural Health Camp Assistant</option>
+                <option value="water">Clean Water Field Support</option>
+              </select>
+              <div id="volRoleError" class="field-error">Please select a preferred role.</div>
+            </div>
+
+            <div class="form-group">
+              <label>Availability *</label>
+              <div class="radio-group">
+                <label class="radio-option">
+                  <input type="radio" name="availability" value="weekends" checked> Weekends
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="availability" value="weekdays"> Weekdays
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="availability" value="both"> Flexible
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="volNotes">Past Experience (Optional)</label>
+              <textarea id="volNotes" rows="2" placeholder="Brief note about your skills..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label class="checkbox-option">
+                <input type="checkbox" id="volTerms">
+                <span>I agree to follow the foundation's volunteer safety guidelines. *</span>
+              </label>
+              <div id="volTermsError" class="field-error">You must accept the terms to continue.</div>
+            </div>
+
+            <button type="submit" class="btn btn-secondary btn-block" style="padding: 11px;">Submit Application</button>
+            <div id="volunteerSuccess" class="status-message status-success"></div>
+          </form>
+        </div>
+
+        <div class="sidebar-info">
+          <h4>Guidelines</h4>
+          <ul class="sidebar-list">
+            <li><strong>Age:</strong> Minimum 16 years.</li>
+            <li><strong>Orientation:</strong> Held every second Saturday.</li>
+            <li><strong>Gear:</strong> Safety vests and badges provided on site.</li>
+            <li><strong>Transport:</strong> Carpooling available from metro stations.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section-padding" style="background: #fff; border-top: 1px solid #e0e0e0;">
+    <div class="container">
+      <div class="section-title">
+        <h3>Frequently Asked Questions</h3>
+      </div>
+
+      <div class="grid-2">
+        <div style="background: #f8f9fa; padding: 16px; border-radius: 6px; border: 1px solid #e0e0e0;">
+          <h4 style="font-size: 14px; color: #1b5e20; margin-bottom: 4px;">Is prior experience needed?</h4>
+          <p style="font-size: 12px; color: #555;">No prior experience is necessary. All tasks include field
+            orientation.</p>
+        </div>
+        <div style="background: #f8f9fa; padding: 16px; border-radius: 6px; border: 1px solid #e0e0e0;">
+          <h4 style="font-size: 14px; color: #1b5e20; margin-bottom: 4px;">Can students get credit?</h4>
+          <p style="font-size: 12px; color: #555;">Yes, we sign official institutional internship and community hours
+            forms.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Hope Life Foundation</h4>
+          <p>Independent charitable trust founded in 2018 providing education, water, and food relief.</p>
+          <p>Registration No: NGO-2018-09412</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="causes.html">Our Causes</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="donate.html">Donate</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p><strong>Address:</strong> 124 Hope Street, New Delhi 110001</p>
+          <p><strong>Phone:</strong> +91 98765 43210</p>
+          <p><strong>Email:</strong> contact@hopelifengo.org</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hope Life Foundation. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <rect width="600" height="450" fill="#fbe9e7"/>
+  <rect x="20" y="20" width="560" height="410" rx="8" fill="#ffffff" stroke="#ffab91" stroke-width="2"/>
+  <circle cx="300" cy="190" r="100" fill="#ffccbc"/>
+  <path d="M220 210 Q300 220 380 210 C380 270, 350 290, 300 290 C250 290, 220 270, 220 210 Z" fill="#d84315"/>
+  <ellipse cx="300" cy="210" rx="80" ry="18" fill="#ff7043"/>
+  <path d="M270 160 Q260 130 280 110" stroke="#9e9e9e" stroke-width="3" fill="none"/>
+  <path d="M300 150 Q290 120 310 100" stroke="#9e9e9e" stroke-width="3" fill="none"/>
+  <path d="M330 160 Q320 130 340 110" stroke="#9e9e9e" stroke-width="3" fill="none"/>
+  <text x="300" y="380" font-family="Arial, sans-serif" font-size="19" font-weight="bold" fill="#bf360c" text-anchor="middle">Daily Food Relief Drive</text>
+  <text x="300" y="405" font-family="Arial, sans-serif" font-size="14" fill="#d84315" text-anchor="middle">City Shelter Distribution - January 2026</text>
+</svg>

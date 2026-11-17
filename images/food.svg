@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="foodBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fbe9e7"/>
+      <stop offset="100%" stop-color="#ffccbc"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#foodBg)"/>
+  <circle cx="300" cy="200" r="140" fill="#ffffff" opacity="0.6"/>
+  <ellipse cx="300" cy="300" rx="160" ry="25" fill="#d7ccc8"/>
+  <path d="M190 220 Q300 230 410 220 C410 300, 370 330, 300 330 C230 330, 190 300, 190 220 Z" fill="#ef6c00"/>
+  <ellipse cx="300" cy="220" rx="110" ry="25" fill="#ffa726"/>
+  <circle cx="280" cy="210" r="18" fill="#43a047"/>
+  <circle cx="320" cy="210" r="15" fill="#e53935"/>
+  <circle cx="300" cy="225" r="14" fill="#fdd835"/>
+  <path d="M260 170 Q250 130 270 100" stroke="#b0bec5" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M300 160 Q290 120 310 90" stroke="#b0bec5" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M340 170 Q330 130 350 100" stroke="#b0bec5" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <text x="300" y="55" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#bf360c" text-anchor="middle">Daily Meals and Food Relief</text>
+</svg>

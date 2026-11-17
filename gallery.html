@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Hope Life Foundation</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo-area">
+        <img src="images/logo.svg" alt="Logo">
+        <div class="logo-text">
+          <h1>Hope Life Foundation</h1>
+          <p>Serving Communities</p>
+        </div>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="causes.html">Causes</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="donate.html" class="nav-donate-btn">Donate Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h2>Photo Gallery</h2>
+      <p>Field documentation of water projects, schools, food relief, and health camps.</p>
+    </div>
+  </section>
+
+  <section class="section-padding">
+    <div class="container">
+      <div class="gallery-filters">
+        <button type="button" class="filter-btn active" data-filter="all">All Photos</button>
+        <button type="button" class="filter-btn" data-filter="water">Water Projects</button>
+        <button type="button" class="filter-btn" data-filter="education">Education</button>
+        <button type="button" class="filter-btn" data-filter="food">Food Relief</button>
+        <button type="button" class="filter-btn" data-filter="health">Health Camps</button>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="water" data-title="Clean Water Tap Installation" data-desc="Solar borewell plant in North District serving 650 families.">
+          <img src="images/gallery1.svg" alt="Clean Water">
+          <div class="gallery-caption">
+            <h5>Clean Water Installation</h5>
+            <span>North District - March 2026</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="education" data-title="Stationery Distribution" data-desc="Delivering bags, books, and geometry sets to 240 primary school children.">
+          <img src="images/gallery2.svg" alt="Stationery">
+          <div class="gallery-caption">
+            <h5>Stationery Distribution</h5>
+            <span>East Primary School - Feb 2026</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="food" data-title="Food Relief Drive" data-desc="Preparing and packing 400 nutritious hot meals daily.">
+          <img src="images/gallery3.svg" alt="Food Relief">
+          <div class="gallery-caption">
+            <h5>Food Relief Drive</h5>
+            <span>City Shelter - Jan 2026</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="health" data-title="Free Health Screening" data-desc="Doctors and optometrists conducting diagnostic screenings.">
+          <img src="images/gallery4.svg" alt="Health Camp">
+          <div class="gallery-caption">
+            <h5>Free Health Screening</h5>
+            <span>Rural Health Center - Dec 2025</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="food" data-title="Winter Blanket Support" data-desc="Handing over thermal blankets and woollen clothing to families.">
+          <img src="images/gallery5.svg" alt="Blanket Support">
+          <div class="gallery-caption">
+            <h5>Winter Blanket Support</h5>
+            <span>Hill District - Nov 2025</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="water" data-title="Tree Plantation Drive" data-desc="Planting 350 saplings around community water reservoirs.">
+          <img src="images/gallery6.svg" alt="Tree Plantation">
+          <div class="gallery-caption">
+            <h5>Tree Plantation Drive</h5>
+            <span>Eco Green Initiative - Oct 2025</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="education" data-title="Women Tailoring Workshop" data-desc="Garment drafting and tailoring demonstration for vocational learners.">
+          <img src="images/gallery7.svg" alt="Tailoring Workshop">
+          <div class="gallery-caption">
+            <h5>Tailoring Workshop</h5>
+            <span>Livelihood Center - Sep 2025</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="health" data-title="Annual Volunteer Meet" data-desc="Over 180 volunteers gathering for annual safety training.">
+          <img src="images/gallery8.svg" alt="Volunteer Meet">
+          <div class="gallery-caption">
+            <h5>Volunteer Meet</h5>
+            <span>Community Hall - Aug 2025</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="lightboxModal" class="lightbox-modal">
+    <div class="lightbox-container">
+      <div class="lightbox-header">
+        <span id="lightboxCounter">Photo 1 of 8</span>
+        <button type="button" id="lightboxClose" class="lightbox-close">&times;</button>
+      </div>
+      <div class="lightbox-image-box">
+        <button type="button" id="lightboxPrev" class="lightbox-nav lightbox-prev">&#10094;</button>
+        <img id="lightboxImg" src="images/gallery1.svg" alt="Enlarged photo">
+        <button type="button" id="lightboxNext" class="lightbox-nav lightbox-next">&#10095;</button>
+      </div>
+      <div class="lightbox-caption-box">
+        <h4 id="lightboxTitle">Photo Title</h4>
+        <p id="lightboxDesc">Description</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="section-padding" style="background: #fff; border-top: 1px solid #e0e0e0;">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h4>Field Office Inquiries</h4>
+          <div class="contact-item">
+            <strong>Headquarters Address</strong>
+            <span>124 Hope Street, Community Complex, New Delhi 110001</span>
+          </div>
+          <div class="contact-item">
+            <strong>Phone Numbers</strong>
+            <span>+91 98765 43210 | +91 11 2345 6789</span>
+          </div>
+          <div class="contact-item">
+            <strong>Email</strong>
+            <span>contact@hopelifengo.org</span>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <h4>Quick Inquiry</h4>
+          <form id="quickContactForm">
+            <div class="form-group">
+              <label for="contactName">Name *</label>
+              <input type="text" id="contactName" placeholder="Full name" required>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email *</label>
+              <input type="email" id="contactEmail" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message *</label>
+              <textarea id="contactMessage" rows="2" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-secondary btn-block">Submit</button>
+            <div id="contactStatus" class="status-message"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Hope Life Foundation</h4>
+          <p>Independent charitable trust founded in 2018 providing education, water, and food relief.</p>
+          <p>Registration No: NGO-2018-09412</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="causes.html">Our Causes</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="donate.html">Donate</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p><strong>Address:</strong> 124 Hope Street, New Delhi 110001</p>
+          <p><strong>Phone:</strong> +91 98765 43210</p>
+          <p><strong>Email:</strong> contact@hopelifengo.org</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hope Life Foundation. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
